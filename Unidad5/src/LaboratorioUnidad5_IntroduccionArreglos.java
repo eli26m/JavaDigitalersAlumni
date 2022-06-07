@@ -111,7 +111,7 @@ public class LaboratorioUnidad5_IntroduccionArreglos {
 		Oracion de prueba:
 		
 		Había una vez un hombre invisible, que se cansó de que no lo vieran. No es que fuera de verdad invisible. Sino que la gente se había acostumbrado a no verlo. Y si nadie te ve, ¿se puede decir que estés ahí?
-		
+		El señor y la señora Dursley, que vivían en el número 4 de Privet Drive, estaban orgullosos de decir que eran muy normales, afortunadamente. Eran las últimas personas que se esperaría encontrar relacionadas con algo extraño o misterioso, porque no estaban para tales tonterías. 
 	*/
 
 }
