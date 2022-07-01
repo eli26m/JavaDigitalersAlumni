@@ -222,11 +222,30 @@
 									"model": {
 										"$ref": "AAAAAAGBRabbtE+Evzc="
 									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGBu5e5ubcR6AU=",
+											"_parent": {
+												"$ref": "AAAAAAGBRabbtU+N/+s="
+											},
+											"model": {
+												"$ref": "AAAAAAGBu5e5r7cONDo="
+											},
+											"font": "Arial;13;0",
+											"left": 197,
+											"top": 305,
+											"width": 151,
+											"height": 13,
+											"text": "+devolverDatos()",
+											"horizontalAlignment": 0
+										}
+									],
 									"font": "Arial;13;0",
 									"left": 192,
 									"top": 300,
 									"width": 161,
-									"height": 10
+									"height": 23
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -266,7 +285,7 @@
 							"left": 192,
 							"top": 192,
 							"width": 161,
-							"height": 118,
+							"height": 131,
 							"nameCompartment": {
 								"$ref": "AAAAAAGBRabbtU+HuQw="
 							},
@@ -324,7 +343,7 @@
 											"font": "Arial;13;1",
 											"left": 373,
 											"top": 199,
-											"width": 152.47705078125,
+											"width": 204.02001953125,
 											"height": 13,
 											"text": "Recibo"
 										},
@@ -359,7 +378,7 @@
 									"font": "Arial;13;0",
 									"left": 368,
 									"top": 192,
-									"width": 162.47705078125,
+									"width": 214.02001953125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGBRasjCE/2x70="
@@ -396,9 +415,9 @@
 											"font": "Arial;13;0",
 											"left": 373,
 											"top": 222,
-											"width": 152.47705078125,
+											"width": 204.02001953125,
 											"height": 13,
-											"text": "-ElementoIngresado: texto",
+											"text": "-ElementoIngresado: TipoElemento",
 											"horizontalAlignment": 0
 										},
 										{
@@ -413,7 +432,7 @@
 											"font": "Arial;13;0",
 											"left": 373,
 											"top": 237,
-											"width": 152.47705078125,
+											"width": 204.02001953125,
 											"height": 13,
 											"text": "-Cantidad: entero",
 											"horizontalAlignment": 0
@@ -430,16 +449,16 @@
 											"font": "Arial;13;0",
 											"left": 373,
 											"top": 252,
-											"width": 152.47705078125,
+											"width": 204.02001953125,
 											"height": 13,
-											"text": "-Total: entero",
+											"text": "-Total: decimal",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 368,
 									"top": 217,
-									"width": 162.47705078125,
+									"width": 214.02001953125,
 									"height": 53
 								},
 								{
@@ -464,7 +483,7 @@
 											"font": "Arial;13;0",
 											"left": 373,
 											"top": 275,
-											"width": 152.47705078125,
+											"width": 204.02001953125,
 											"height": 13,
 											"text": "+sumarCantidad()",
 											"horizontalAlignment": 0
@@ -481,7 +500,7 @@
 											"font": "Arial;13;0",
 											"left": 373,
 											"top": 290,
-											"width": 152.47705078125,
+											"width": 204.02001953125,
 											"height": 13,
 											"text": "+calcularTotal()",
 											"horizontalAlignment": 0
@@ -490,7 +509,7 @@
 									"font": "Arial;13;0",
 									"left": 368,
 									"top": 270,
-									"width": 162.47705078125,
+									"width": 214.02001953125,
 									"height": 38
 								},
 								{
@@ -530,7 +549,7 @@
 							"containerChangeable": true,
 							"left": 368,
 							"top": 192,
-							"width": 162.47705078125,
+							"width": 214.02001953125,
 							"height": 116,
 							"nameCompartment": {
 								"$ref": "AAAAAAGBRasjCE/120w="
@@ -833,6 +852,16 @@
 							"visibility": "private",
 							"type": "decimal"
 						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGBu5e5r7cONDo=",
+							"_parent": {
+								"$ref": "AAAAAAGBRabbtE+Evzc="
+							},
+							"name": "devolverDatos"
+						}
 					]
 				},
 				{
@@ -851,7 +880,7 @@
 							},
 							"name": "ElementoIngresado",
 							"visibility": "private",
-							"type": "texto"
+							"type": "TipoElemento"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -871,7 +900,7 @@
 							},
 							"name": "Total",
 							"visibility": "private",
-							"type": "entero"
+							"type": "decimal"
 						}
 					],
 					"operations": [

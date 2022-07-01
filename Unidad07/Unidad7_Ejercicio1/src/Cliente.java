@@ -1,28 +1,19 @@
 
 public class Cliente {
 
-	Elemento elemento = new Elemento();
-	Recibo recibo = new Recibo();
-
 	public void ingresar() {
 		
+		Recibo recibo = new Recibo();
 		
-		elemento.setTipoElemento("Botella de gaseosa");
-		elemento.setAncho(100.00);
-		elemento.setAlto(300.00);
-		elemento.setPeso(200.00);
-		elemento.setValor(50.00);
+		Elemento elemento = new Elemento("Botella de gaseosa", 200, 300, 400, 100);
 		
-		
-		System.out.println(recibo.getElementoIngresado());
 		recibo.sumarCantidad();
 		
-	}
-	
-	public void imprimirRecibo() {
+		Elemento elemento2 = new Elemento("Botella de gaseosa", 200, 300, 400, 100);
 		
-		recibo.calcularTotal();
-		System.out.println(recibo.getTotal());
+		recibo.sumarCantidad();
+		
+		recibo.mostrarCantidad();
 		
 	}
 	

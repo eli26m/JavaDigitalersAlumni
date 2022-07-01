@@ -1,40 +1,34 @@
 
-public class Recibo extends Elemento{
-	
-	private String ElementoIngresado;
+public class Recibo {
+
+	private Elemento ElementoIngresado;
 	private int Cantidad;
-	private double Total;
+	private float Total;
 	
-	public Recibo(){
-		ElementoIngresado = this.getTipoElemento();
+	public Recibo() {
 		Cantidad = 0;
-		Total = 0;
 	}
 	
-	public String getElementoIngresado() {
+	public Elemento getElementoIngresado() {
 		return ElementoIngresado;
 	}
-	
-//	public void setElementoIngresado() {
-//		ElementoIngresado = this.getTipoElemento();
-//	}
-	
+	public void setElementoIngresado(Elemento elementoIngresado) {
+		ElementoIngresado = elementoIngresado;
+	}
 	public int getCantidad() {
 		return Cantidad;
 	}
-	
-	public void sumarCantidad() { // setter
+	public void sumarCantidad() {
 		Cantidad++;
 	}
-	
-	public double getTotal() {
+	public float getTotal() {
 		return Total;
 	}
-	
-	public void calcularTotal() { // setter
-		double precioUnitario = this.getValor();
-//		System.out.println(this.getValor());
-		Total =  precioUnitario * Cantidad;
+	public void setTotal(float total) {
+		Total = total;
 	}
 	
+	public void mostrarCantidad() {
+		System.out.println(Cantidad);
+	}
 }
